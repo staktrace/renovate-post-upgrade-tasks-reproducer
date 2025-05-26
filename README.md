@@ -1,17 +1,13 @@
-# minimal-reproduction-template
-
-First, read the [Renovate minimal reproduction instructions](https://github.com/renovatebot/renovate/blob/main/docs/development/minimal-reproductions.md).
-
-Then replace the current `h1` with the Renovate Issue/Discussion number.
+# 36162
 
 ## Current behavior
 
-Explain the current behavior here.
+The renovate run *adds* a `bin/.jq-1.7.1.pkg` file. See diff for https://github.com/staktrace/renovate-post-upgrade-tasks-reproducer/pull/1/files
 
 ## Expected behavior
 
-Explain the expected behavior here.
+The renovate run *renames* the existing `bin/.jq-1.5.pkg` file to `bin/.jq-1.7.1.pkg` (or otherwise does an add/delete that is equivalent).
 
 ## Link to the Renovate issue or Discussion
 
-Put your link to the Renovate issue or Discussion here.
+https://github.com/renovatebot/renovate/discussions/36162
