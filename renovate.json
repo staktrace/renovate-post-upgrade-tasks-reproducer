@@ -1,1 +1,16 @@
-{}
+{
+  "enabledManagers": [
+    "hermit"
+  ],
+  "packageRules": [
+    {
+      "matchManagers": ["hermit"],
+      "matchPackageNames": ["jq"],
+      "postUpgradeTasks": {
+        "commands": ["post-upgrade-stuff/cmd.sh"],
+        "fileFilters": ["post-upgrade-stuff/output.txt"],
+        "executionMode": "branch"
+      }
+    }
+  ]
+}
