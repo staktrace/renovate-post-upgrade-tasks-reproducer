@@ -2,7 +2,7 @@
 
 ## Current behavior
 
-The renovate run *adds* a `bin/.jq-1.7.1.pkg` file. See diff for https://github.com/staktrace/renovate-post-upgrade-tasks-reproducer/pull/1/files
+The renovate run *adds* a `bin/.jq-1.7.1.pkg` file (exact version may vary over time, it should be whatever the latest jq version is).
 
 ## Expected behavior
 
