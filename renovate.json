@@ -7,7 +7,10 @@
       "matchManagers": ["hermit"],
       "matchPackageNames": ["jq"],
       "postUpgradeTasks": {
-        "commands": ["post-upgrade-stuff/cmd.sh"],
+        "commands": [
+          "post-upgrade-stuff/cmd.sh",
+          "post-upgrade-stuff/cmd.sh --again"
+        ],
         "fileFilters": ["post-upgrade-stuff/output.txt"],
         "executionMode": "branch"
       }
